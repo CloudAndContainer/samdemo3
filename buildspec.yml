@@ -11,7 +11,6 @@ phases:
       - export PATH=$PATH:$USER_BASE_PATH/bin   
       - export BUCKET=lambda-deployment-artifacts-456   
       - npm install time 
-      - sam validate 
       - sam package --template-file template.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yaml 
        
 artifacts: 
